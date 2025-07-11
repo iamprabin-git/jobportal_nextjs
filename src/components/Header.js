@@ -254,10 +254,10 @@ export default function Header() {
               </div>
             ))}
             <Link 
-              href={ADMIN_ROUTE} 
+              href={LOGIN_ROUTE} 
               className="block py-3 px-4 text-green-600 dark:text-green-400"
             >
-              Admin
+              login
             </Link>
           </div>
         )}
