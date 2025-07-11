@@ -2,7 +2,7 @@ import { SIGNUP_ROUTE } from "@/constants/routes";
 import Link from "next/link";
 import React from "react";
 
-function page() {
+function LoginPage() {
   return (
     <section className="bg-gray-50 dark:bg-gray-900">
      
@@ -65,12 +65,12 @@ function page() {
                     </label>
                   </div>
                 </div>
-                <a
+                <Link
                   href="#"
                   className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
               <button
                 type="submit"
@@ -95,4 +95,4 @@ function page() {
   );
 }
 
-export default page;
+export default LoginPage;
