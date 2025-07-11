@@ -7,7 +7,7 @@ import { jobs } from '@/data';
 export default function JobsPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+
       
       <main className="flex-grow">
         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-900 dark:to-indigo-900 text-white py-25">
@@ -103,7 +103,7 @@ export default function JobsPage() {
         </div>
       </main>
       
-      <Footer />
+
     </div>
   );
 }

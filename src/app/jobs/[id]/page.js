@@ -53,7 +53,7 @@ export default function JobDetailPage({ params }) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+
       
       <main className="flex-grow">
         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-900 dark:to-indigo-900 text-white py-26">
@@ -195,7 +195,7 @@ export default function JobDetailPage({ params }) {
         </div>
       </main>
       
-      <Footer />
+
     </div>
   );
 }

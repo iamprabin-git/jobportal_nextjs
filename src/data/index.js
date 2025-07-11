@@ -100,7 +100,7 @@ export const companies = [
     jobsPosted: 24,
     description: "A leading tech company specializing in innovative software solutions for businesses worldwide.",
     logo: {
-      src: "/logos/tech-innovations.png",
+      src: logo,
       alt: "Tech Innovations Company Logo"
     }
   },
@@ -110,7 +110,7 @@ export const companies = [
     jobsPosted: 18,
     description: "We provide cutting-edge data management systems for enterprises of all sizes.",
     logo: {
-      src: "/logos/data-systems.png",
+      src: logo,
       alt: "Data Systems Inc. Company Logo"
     }
   },
@@ -120,7 +120,7 @@ export const companies = [
     jobsPosted: 12,
     description: "A design agency focused on creating beautiful and functional user experiences.",
     logo: {
-      src: "/logos/creative-minds.png",
+      src: logo,
       alt: "Creative Minds Company Logo"
     }
   },
@@ -130,7 +130,7 @@ export const companies = [
     jobsPosted: 32,
     description: "Specializing in cloud infrastructure and DevOps services for modern applications.",
     logo: {
-      src: "/logos/cloud-solutions.png",
+      src: logo,
       alt: "Cloud Solutions Company Logo"
     }
   },
@@ -140,7 +140,7 @@ export const companies = [
     jobsPosted: 15,
     description: "Startup incubator and technology innovation hub supporting new ideas.",
     logo: {
-      src: "/logos/innovate-tech.png",
+      src: logo,
       alt: "Innovate Tech Company Logo"
     }
   },
@@ -150,7 +150,7 @@ export const companies = [
     jobsPosted: 21,
     description: "Data analytics and business intelligence solutions for data-driven companies.",
     logo: {
-      src: "/logos/analytics-pro.png",
+      src: logo,
       alt: "Analytics Pro Company Logo"
     }
   }
