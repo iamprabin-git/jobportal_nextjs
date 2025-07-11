@@ -1,13 +1,14 @@
 // src/app/page.jsx
-import Header from '@/components/Header';
+
 import JobCard from '@/components/JobCard';
-import CompanyCard from '@/components/CompanyCard';
-import Footer from '@/components/Footer';
-import { jobs, companies } from '@/data';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
 import CTA from '@/components/CTA';
 import Sponsors from '@/components/home/SponserShip';
+import { JOBS_ROUTE, LOGIN_ROUTE } from '@/constants/routes';
+import HiringCompanies from '@/components/home/CompanyLists';
+import { companies, jobs } from '@/data';
+import HeroSection from '@/components/home/HeroSection';
 
 export default function Home() {
   const featuredJobs = jobs.slice(0, 3);
@@ -18,35 +19,14 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-900 dark:to-indigo-900 text-white py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Find Your Dream Job Today</h1>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Discover thousands of job opportunities tailored to your skills and career goals.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link 
-                href="/jobs" 
-                className="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md font-medium text-lg shadow-lg"
-              >
-                Browse Jobs
-              </Link>
-              <Link
-                href="/post-job" 
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-md font-medium text-lg"
-              >
-                Post a Job
-              </Link>
-            </div>
-          </div>
-        </section>
+        <HeroSection />
 
         {/* Featured Jobs */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center mb-10">
               <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Featured Jobs</h2>
-              <Link href="/jobs" className="text-blue-600 dark:text-blue-400 hover:underline">
+              <Link href={JOBS_ROUTE} className="text-blue-600 dark:text-blue-400 hover:underline">
                 View all jobs
               </Link>
             </div>
@@ -60,19 +40,7 @@ export default function Home() {
         </section>
 
         {/* Companies */}
-        <section className="py-16 bg-gray-100 dark:bg-slate-800">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-10 text-center">
-              Top Companies Hiring
-            </h2>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {featuredCompanies.map(company => (
-                <CompanyCard key={company.id} company={company} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <HiringCompanies />
 
         {/* Call to Action */}
        <CTA />
