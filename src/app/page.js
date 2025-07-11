@@ -5,6 +5,9 @@ import CompanyCard from '@/components/CompanyCard';
 import Footer from '@/components/Footer';
 import { jobs, companies } from '@/data';
 import Link from 'next/link';
+import Testimonials from '@/components/Testimonials';
+import CTA from '@/components/CTA';
+import Sponsors from '@/components/home/SponserShip';
 
 export default function Home() {
   const featuredJobs = jobs.slice(0, 3);
@@ -72,19 +75,9 @@ export default function Home() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white">
-              Ready to take the next step?
-            </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto text-slate-700 dark:text-slate-300">
-              Create an account to save jobs and get personalized recommendations.
-            </p>
-            <button className="btn-primary text-lg px-8 py-3">
-              Sign Up Now
-            </button>
-          </div>
-        </section>
+       <CTA />
+       <Sponsors />
+        <Testimonials />
       </main>
     </div>
   );
