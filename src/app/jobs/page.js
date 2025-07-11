@@ -10,7 +10,7 @@ export default function JobsPage() {
       <Header />
       
       <main className="flex-grow">
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-900 dark:to-indigo-900 text-white py-16">
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-900 dark:to-indigo-900 text-white py-25">
           <div className="container mx-auto px-4">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Job Listings</h1>
             <p className="text-xl max-w-3xl">

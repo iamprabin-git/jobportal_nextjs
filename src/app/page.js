@@ -4,6 +4,7 @@ import JobCard from '@/components/JobCard';
 import CompanyCard from '@/components/CompanyCard';
 import Footer from '@/components/Footer';
 import { jobs, companies } from '@/data';
+import Link from 'next/link';
 
 export default function Home() {
   const featuredJobs = jobs.slice(0, 3);
@@ -22,18 +23,18 @@ export default function Home() {
               Discover thousands of job opportunities tailored to your skills and career goals.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
+              <Link 
                 href="/jobs" 
                 className="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md font-medium text-lg shadow-lg"
               >
                 Browse Jobs
-              </a>
-              <a 
+              </Link>
+              <Link
                 href="/post-job" 
                 className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-md font-medium text-lg"
               >
                 Post a Job
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -43,9 +44,9 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center mb-10">
               <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Featured Jobs</h2>
-              <a href="/jobs" className="text-blue-600 dark:text-blue-400 hover:underline">
+              <Link href="/jobs" className="text-blue-600 dark:text-blue-400 hover:underline">
                 View all jobs
-              </a>
+              </Link>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
