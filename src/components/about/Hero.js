@@ -42,7 +42,7 @@ function Hero() {
             Connecting Talent with Opportunity
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            We're revolutionizing the job market by connecting top talent with world-class employers through innovative technology and personalized career services.
+            We are revolutionizing the job market by connecting top talent with world-class employers through innovative technology and personalized career services.
           </p>
           
           {/* CTA Button */}

@@ -60,14 +60,14 @@ function Mission() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
-              Founded in 2015, we've grown from a small startup to a leading platform trusted by over 50,000 companies and millions of job seekers worldwide. Our AI-powered matching system and personalized career coaching have helped countless professionals find their dream jobs.
+              Founded in 2015, we have grown from a small startup to a leading platform trusted by over 50,000 companies and millions of job seekers worldwide. Our AI-powered matching system and personalized career coaching have helped countless professionals find their dream jobs.
             </p>
             <p 
               className={`text-lg text-gray-700 dark:text-slate-300 transition-all duration-700 delay-300 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
-              We're committed to creating a job market where talent is recognized, opportunities are accessible, and careers are built on meaningful connections.
+              We are committed to creating a job market where talent is recognized, opportunities are accessible, and careers are built on meaningful connections.
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-center">
