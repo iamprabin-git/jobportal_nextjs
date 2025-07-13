@@ -83,7 +83,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 py-12 px-4 sm:px-6">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-200 dark:to-gray-800 py-32 px-4  sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -107,7 +107,7 @@ const ContactForm = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="lg:w-1/2"
           >
-            <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+            <div className="bg-white dark:bg-gray-400 rounded-2xl shadow-xl p-6 md:p-8">
                 <h2 className="text-3xl font-bold text-gray-800 text-center items-center">Send Us a Message</h2>
               {submitStatus === 'success' && (
                 <motion.div 
