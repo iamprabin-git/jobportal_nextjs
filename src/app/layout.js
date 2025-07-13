@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import './globals.css';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function RootLayout({ children }) {
   return (
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>
