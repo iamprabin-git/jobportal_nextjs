@@ -1,8 +1,7 @@
 // src/app/jobs/[id]/page.jsx
 "use client";
 import { use } from 'react'; // Import the use hook
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
 import { jobs } from '@/data';
 import { notFound } from 'next/navigation';
 import { FaFacebook } from "react-icons/fa";
@@ -153,7 +152,7 @@ export default function JobDetailPage({ params }) {
                     </div>
                   </div>
                   
-                  <button className="btn-primary w-full">Apply Now</button>
+                  <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded w-full cursor-pointer">Apply Now</button>
                   
                   <div>
                     <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Share This Job</h3>
