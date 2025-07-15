@@ -6,7 +6,7 @@ export default function FooterSection({ title, links }) {
       <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
         {title}
       </h4>
-      <ul className="space-y-2">
+      <ul className="space-y-1">
         {links.map((link, index) => (
           <li key={index}>
             <Link 
