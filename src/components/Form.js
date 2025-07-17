@@ -180,7 +180,7 @@ function Form() {
                   {isSubmitting ? (
                     <div className="flex items-center justify-center">
                       <i className="fas fa-spinner fa-spin mr-3"></i>
-                      Sending...
+                      Sending....
                     </div>
                   ) : (
                     'Submit'
